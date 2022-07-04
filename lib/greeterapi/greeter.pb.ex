@@ -10,14 +10,14 @@ defmodule Greeterapi.HelloResponse do
 
   field :message, 1, type: :string
 end
-defmodule Greeterapi.Greeter.Service do
+defmodule Greeterapi.GreeterService.Service do
   @moduledoc false
-  use GRPC.Service, name: "greeterapi.Greeter", protoc_gen_elixir_version: "0.10.0"
+  use GRPC.Service, name: "greeterapi.GreeterService", protoc_gen_elixir_version: "0.10.0"
 
   rpc :SayHello, Greeterapi.HelloRequest, Greeterapi.HelloResponse
 end
 
-defmodule Greeterapi.Greeter.Stub do
+defmodule Greeterapi.GreeterService.Stub do
   @moduledoc false
-  use GRPC.Stub, service: Greeterapi.Greeter.Service
+  use GRPC.Stub, service: Greeterapi.GreeterService.Service
 end
