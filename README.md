@@ -26,7 +26,7 @@ end
 
 ## License
 
-Flix is released under the [MIT license](./LICENSE.md).
+Greeter Proto is released under the [MIT license](./LICENSE.md).
 
 ## Copyright
 
