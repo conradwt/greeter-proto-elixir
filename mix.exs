@@ -24,7 +24,7 @@ defmodule GreeterProto.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:grpc, "~> 0.3.1"},
+      {:grpc, github: "elixir-grpc/grpc"},
       {:google_protos, "~> 0.2.0"},
       # 2.9.0 fixes some important bugs, so it's better to use ~> 2.9.0
       {:cowlib, "~> 2.9.0", override: true}
