@@ -1,12 +1,12 @@
 defmodule Greeterapi.HelloRequest do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, syntax: :proto3, protoc_gen_elixir_version: "0.10.0"
 
   field :name, 1, type: :string
 end
 defmodule Greeterapi.HelloResponse do
   @moduledoc false
-  use Protobuf, protoc_gen_elixir_version: "0.10.0", syntax: :proto3
+  use Protobuf, syntax: :proto3, protoc_gen_elixir_version: "0.10.0"
 
   field :message, 1, type: :string
 end

@@ -30,4 +30,4 @@ Greeter Proto is released under the [MIT license](./LICENSE.md).
 
 ## Copyright
 
-copyright:: (c) Copyright 2022 Conrad Taylor. All Rights Reserved.
+Copyright &copy; 2022 - 2023 Conrad Taylor. All rights reserved.

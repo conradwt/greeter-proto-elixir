@@ -5,7 +5,7 @@ defmodule GreeterProto.MixProject do
     [
       app: :greeter_proto,
       version: "0.1.0",
-      elixir: "~> 1.14.0",
+      elixir: "~> 1.15.4",
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
@@ -24,12 +24,12 @@ defmodule GreeterProto.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:grpc, github: "elixir-grpc/grpc"},
-      {:google_protos, "~> 0.2.0"},
+      {:grpc, "~> 0.6.0"},
+      {:google_protos, "~> 0.3.0"},
       # 2.9.0 fixes some important bugs, so it's better to use ~> 2.9.0
-      {:cowlib, "~> 2.9.0", override: true}
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      # {:cowlib, "~> 2.9.0", override: true},
+      {:cowlib, "~> 2.12", override: true},
+      {:mint, "~> 1.5.1", override: true}
     ]
   end
 end
