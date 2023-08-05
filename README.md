@@ -1,16 +1,19 @@
 # Greeter Proto
 
-## Description
+The purpose of the repository is to house the proto definitions
+for the Greeter service.
 
-Houses proto definitions for pokemon.
+## Code Generation
 
-## Updating Definitions
-
-After changing `.proto` files, regenerate elixir files by running:
+Generate Elixir files from Protobuf definitions or `.proto` files by
+doing the following:
 
 ```zsh
 protoc --elixir_out=plugins=grpc:./lib greeterapi/*
 ```
+
+Note: After changing `.proto` files, rerun the above command to
+update the generated Elixir files.
 
 ## Installation
 
@@ -23,6 +26,11 @@ def deps do
   ]
 end
 ```
+
+## Related repos
+
+- [Greeter Client](https://github.com/conradwt/greeter-client-elixir)
+- [Greeter Server](https://github.com/conradwt/greeter-server-elixir)
 
 ## License
 
