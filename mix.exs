@@ -24,11 +24,11 @@ defmodule GreeterProto.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:grpc, "~> 0.6.0"},
-      {:google_protos, "~> 0.3.0"},
       {:cowlib, "~> 2.12", override: true},
+      {:google_protos, "~> 0.3.0"},
+      {:grpc, "~> 0.6.0"},
       {:mint, "~> 1.5.1", override: true},
-      {:protobuf, "~> 0.12.0"}
+      {:protobuf, "~> 0.12.0", only: [:dev, :test], override: true}
     ]
   end
 end
